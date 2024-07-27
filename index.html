@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tempo ao vivo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/8c872d7bff.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/temperaturas.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <section class="umtodo">
+        <div class="container">
+            <h1>Climate Consultant</h1>
+        </div>
+        <div class="conteudo">
+            <input type="text" id="inputSearch" placeholder="Search for a city...">
+            <button id="btSearch" onclick="limpar()"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
+        </div>
+    <section>
+        <div id="localizada">
+            <h1>The city located was not found!</h1>
+        </div>
+        <div class="loader" id="loader">
+
+        </div>
+        <section id="centralizeitens">
+            <div class="menuItens">
+                <div class="pais">
+                    <span id="country"></span><h1 class="hifen">-</h1><span id="flagPais"></span>
+                </div>
+                <div class="conteudoClima">
+                    <img src="https://openweathermap.org/img/wn/04d@2x.png" id="imagemBox">
+                    <div class="firstItem">
+                        <h1 id="temperatura"></h1>
+                        <span style="font-weight: 600; font-size: 28px; margin-top: 10px;">&deg;C</span>
+                    </div>
+                    <p id="tempo"></p>
+                </div>
+                <main class="principal">
+                    <section class="pai">
+                        <div class="secondItem">
+                                <i class="fa-solid fa-temperature-high" style="color: #7e0000;" id="iconsBox"></i>
+                            <div>
+                                <p class="titulosBox">Max. temp</p>
+                                <span id="tempmax">26,1</span><span>&deg;C</span>
+                            </div>
+                        </div>
+                        <div class="threeItem">
+                            <div>
+                                <i class="fa-solid fa-droplet" style="color: #74C0FC;" id="iconsBox"></i>
+                            </div>
+                            <div>
+                                <p class="titulosBox">Humidity</p>
+                                <span id="humidity">71</span><span>%</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="mae">
+                        <div class="fourItem">
+                            <div>
+                                <i class="fa-solid fa-temperature-low" style="color: #0084ff;" id="iconsBox"></i>
+                            </div>
+                            <div>
+                                <p class="titulosBox">Min. temp</p>
+                                <span id="tempmin">26,1</span><span>&deg;C</span>
+                            </div>
+                        </div>
+                        <div class="fiveItem">
+                            <div>
+                                <i class="fa-solid fa-wind" style="color: #8866f0;" id="iconsBox"></i>
+                            </div>
+                            <div>
+                                <p class="titulosBox">Wind</p>
+                                <span id="winder">2.0</span>
+                                <span>km/h</span>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </section>
+</body>
+</html>

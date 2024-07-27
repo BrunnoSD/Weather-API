@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(45, 112, 255);
+    font-family: 'Montserrat';
+    color: #f4f4f4;
+}
+
+.umtodo {
+    padding-top: 60px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 23px;
+    color: #f4f4f4;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+}
+
+#inputSearch {
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+    padding: 7px;
+    padding-left: 20px;
+    width: 300px;
+    background-color: #f4f4f4;
+    font-family: 'poppins', sans-serif;
+    font-size: 17px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#btSearch {
+    margin-top: 30px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    width: 50px;
+    outline: none;
+    background-color: black;
+}
+
+.fa-magnifying-glass {
+    color: #f4f4f4;
+}
+
+.fa-location-dot {
+    margin-right: 1ch;
+}
+
+#centralizeitens {
+    display: none;
+    justify-content: center;
+}
+
+.menuItens {
+    width: 350px;
+    height: 420px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: #eeeeee;
+    top: 250px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.pais {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+#country {
+    font-weight: 800;
+    font-size: 23px;
+    margin-left: 2ch;
+    margin-right: 1ch;
+    margin-top: 25px;
+    color: #242424;
+}
+
+.hifen {
+    color: #242424;
+    margin-top: 25px;
+}
+
+#flagPais {
+    font-weight: 800;
+    font-size: 23px;
+    margin-top: 25px;
+    margin-left: 1ch;
+    margin-right: 2ch;
+    color: #242424;
+}
+
+.conteudoClima {
+    width: 320px;
+    height: 110px;
+    background-color: rgb(20, 94, 255);
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 40px;
+    gap: 10px;
+    text-align: justify;
+    white-space: wrap;
+}
+
+#imagemBox {
+    position: absolute;
+    left: 22px;
+    top: 107px;
+    width: 100px;
+}
+
+.firstItem {
+    margin-left: 115px;
+    margin-right: 10px;
+    display: flex;
+}
+
+#temperatura {
+    font-weight: 800;
+    font-size: 43px;
+    margin-top: 5px;
+}
+
+#tempo {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+    word-wrap: normal;
+    margin-left: 115px;
+}
+
+.imagemTempo {
+    position: absolute;
+    left: 30px;
+}
+
+.principal {
+    display: flex;
+    color: #242424;
+}
+
+.pai {
+    margin: 20px 15px;
+}
+
+.secondItem {
+    width: 150px;
+    height: 75px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+}
+
+.threeItem {
+    width: 150px;
+    height: 75px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+}
+
+.mae {
+    margin: 9px 6px;
+}
+
+.fourItem {
+    width: 150px;
+    height: 75px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+}
+.fiveItem {
+    width: 150px;
+    height: 75px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+}
+
+.titulosBox {
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#iconsBox {
+    margin: 30px 20px 20px 20px;
+}
+
+#conteudoTempo {
+    font-weight: 650;
+}
+
+#localizada {
+    width: 355px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    align-content: center;
+    margin-top: 50px;
+    font-family: 'Poppins';
+    box-shadow: rgba(255, 0, 0, 0.4) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: none;
+}
+
+.loader {
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 160px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    animation:
+      l20-1 0.8s infinite linear alternate,
+      l20-2 1.6s infinite linear;
+  }
+  @keyframes l20-1{
+     0%    {clip-path: polygon(50% 50%,0       0,  50%   0%,  50%    0%, 50%    0%, 50%    0%, 50%    0% )}
+     12.5% {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100%   0%, 100%   0%, 100%   0% )}
+     25%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 100% 100%, 100% 100% )}
+     50%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+     62.5% {clip-path: polygon(50% 50%,100%    0, 100%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+     75%   {clip-path: polygon(50% 50%,100% 100%, 100% 100%,  100% 100%, 100% 100%, 50%  100%, 0%   100% )}
+     100%  {clip-path: polygon(50% 50%,50%  100%,  50% 100%,   50% 100%,  50% 100%, 50%  100%, 0%   100% )}
+  }
+  @keyframes l20-2{ 
+    0%    {transform:scaleY(1)  rotate(0deg)}
+    49.99%{transform:scaleY(1)  rotate(135deg)}
+    50%   {transform:scaleY(-1) rotate(0deg)}
+    100%  {transform:scaleY(-1) rotate(-135deg)}
+  }
