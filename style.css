@@ -57,7 +57,7 @@ body {
     cursor: pointer;
     width: 50px;
     outline: none;
-    background-color: black;
+    background-color: #1E3050;
 }
 
 .fa-magnifying-glass {
@@ -93,14 +93,13 @@ body {
 #country {
     font-weight: 800;
     font-size: 23px;
-    margin-left: 2ch;
     margin-right: 1ch;
     margin-top: 25px;
-    color: #242424;
+    color: #1E3050;
 }
 
 .hifen {
-    color: #242424;
+    color: #1E3050;
     margin-top: 25px;
 }
 
@@ -110,7 +109,7 @@ body {
     margin-top: 25px;
     margin-left: 1ch;
     margin-right: 2ch;
-    color: #242424;
+    color: #1E3050;
 }
 
 .conteudoClima {
@@ -127,8 +126,8 @@ body {
 
 #imagemBox {
     position: absolute;
-    left: 22px;
-    top: 107px;
+    left: 15px;
+    top: 100px;
     width: 100px;
 }
 
